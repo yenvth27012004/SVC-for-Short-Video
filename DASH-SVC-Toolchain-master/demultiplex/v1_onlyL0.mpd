@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:mpeg:DASH:schema:MPD:2011"
+         xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011"
+         profiles="urn:mpeg:dash:profile:isoff-main:2011"
+         type="static"
+         mediaPresentationDuration="PT73.75S"
+         minBufferTime="PT2.0S">
+              <BaseURL>././outputV1_onlyL0</BaseURL>
+              <Period start="PT0S">
+    
+     <AdaptationSet bitstreamSwitching="true" mimeType="video/264" startWithSAP="1" maxWidth="720" maxHeight="1280" maxFrameRate="24" par="16:9">
+                    <SegmentBase>
+                        <Initialization sourceURL="v1_onlyL0.init.svc"/>
+                    </SegmentBase>
+    
+     <Representation id="0" codecs="AVC" mimeType="video/264"
+                                width="720" height="1280" frameRate="24" sar="1:1" bandwidth="1161669">
+                       <SegmentList duration="24" timescale="24">
+                     <SegmentURL media="v1_onlyL0.seg0-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg1-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg2-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg3-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg4-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg5-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg6-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg7-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg8-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg9-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg10-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg11-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg12-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg13-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg14-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg15-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg16-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg17-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg18-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg19-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg20-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg21-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg22-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg23-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg24-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg25-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg26-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg27-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg28-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg29-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg30-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg31-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg32-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg33-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg34-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg35-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg36-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg37-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg38-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg39-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg40-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg41-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg42-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg43-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg44-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg45-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg46-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg47-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg48-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg49-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg50-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg51-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg52-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg53-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg54-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg55-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg56-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg57-L0.svc"/>
+                         <SegmentURL media="v1_onlyL0.seg58-L0.svc"/>
+    
+                       </SegmentList>
+                    </Representation>
+    
+     </AdaptationSet>
+        </Period>
+    </MPD>
+    

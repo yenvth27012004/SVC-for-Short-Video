@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:mpeg:DASH:schema:MPD:2011"
+         xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011"
+         profiles="urn:mpeg:dash:profile:isoff-main:2011"
+         type="static"
+         mediaPresentationDuration="PT73.75S"
+         minBufferTime="PT2.0S">
+              <BaseURL>././outputv1</BaseURL>
+              <Period start="PT0S">
+    
+     <AdaptationSet bitstreamSwitching="true" mimeType="video/264" startWithSAP="1" maxWidth="720" maxHeight="1280" maxFrameRate="24" par="16:9">
+                    <SegmentBase>
+                        <Initialization sourceURL="v1.init.svc"/>
+                    </SegmentBase>
+    
+     <Representation id="0" codecs="AVC" mimeType="video/264"
+                                width="720" height="1280" frameRate="24" sar="1:1" bandwidth="1172392">
+                       <SegmentList duration="24" timescale="24">
+                     <SegmentURL media="v1.seg0-L0.svc"/>
+                         <SegmentURL media="v1.seg1-L0.svc"/>
+                         <SegmentURL media="v1.seg2-L0.svc"/>
+                         <SegmentURL media="v1.seg3-L0.svc"/>
+                         <SegmentURL media="v1.seg4-L0.svc"/>
+                         <SegmentURL media="v1.seg5-L0.svc"/>
+                         <SegmentURL media="v1.seg6-L0.svc"/>
+                         <SegmentURL media="v1.seg7-L0.svc"/>
+                         <SegmentURL media="v1.seg8-L0.svc"/>
+                         <SegmentURL media="v1.seg9-L0.svc"/>
+                         <SegmentURL media="v1.seg10-L0.svc"/>
+                         <SegmentURL media="v1.seg11-L0.svc"/>
+                         <SegmentURL media="v1.seg12-L0.svc"/>
+                         <SegmentURL media="v1.seg13-L0.svc"/>
+                         <SegmentURL media="v1.seg14-L0.svc"/>
+                         <SegmentURL media="v1.seg15-L0.svc"/>
+                         <SegmentURL media="v1.seg16-L0.svc"/>
+                         <SegmentURL media="v1.seg17-L0.svc"/>
+                         <SegmentURL media="v1.seg18-L0.svc"/>
+                         <SegmentURL media="v1.seg19-L0.svc"/>
+                         <SegmentURL media="v1.seg20-L0.svc"/>
+                         <SegmentURL media="v1.seg21-L0.svc"/>
+                         <SegmentURL media="v1.seg22-L0.svc"/>
+                         <SegmentURL media="v1.seg23-L0.svc"/>
+                         <SegmentURL media="v1.seg24-L0.svc"/>
+                         <SegmentURL media="v1.seg25-L0.svc"/>
+                         <SegmentURL media="v1.seg26-L0.svc"/>
+                         <SegmentURL media="v1.seg27-L0.svc"/>
+                         <SegmentURL media="v1.seg28-L0.svc"/>
+                         <SegmentURL media="v1.seg29-L0.svc"/>
+                         <SegmentURL media="v1.seg30-L0.svc"/>
+                         <SegmentURL media="v1.seg31-L0.svc"/>
+                         <SegmentURL media="v1.seg32-L0.svc"/>
+                         <SegmentURL media="v1.seg33-L0.svc"/>
+                         <SegmentURL media="v1.seg34-L0.svc"/>
+                         <SegmentURL media="v1.seg35-L0.svc"/>
+                         <SegmentURL media="v1.seg36-L0.svc"/>
+                         <SegmentURL media="v1.seg37-L0.svc"/>
+                         <SegmentURL media="v1.seg38-L0.svc"/>
+                         <SegmentURL media="v1.seg39-L0.svc"/>
+                         <SegmentURL media="v1.seg40-L0.svc"/>
+                         <SegmentURL media="v1.seg41-L0.svc"/>
+                         <SegmentURL media="v1.seg42-L0.svc"/>
+                         <SegmentURL media="v1.seg43-L0.svc"/>
+                         <SegmentURL media="v1.seg44-L0.svc"/>
+                         <SegmentURL media="v1.seg45-L0.svc"/>
+                         <SegmentURL media="v1.seg46-L0.svc"/>
+                         <SegmentURL media="v1.seg47-L0.svc"/>
+                         <SegmentURL media="v1.seg48-L0.svc"/>
+                         <SegmentURL media="v1.seg49-L0.svc"/>
+                         <SegmentURL media="v1.seg50-L0.svc"/>
+                         <SegmentURL media="v1.seg51-L0.svc"/>
+                         <SegmentURL media="v1.seg52-L0.svc"/>
+                         <SegmentURL media="v1.seg53-L0.svc"/>
+                         <SegmentURL media="v1.seg54-L0.svc"/>
+                         <SegmentURL media="v1.seg55-L0.svc"/>
+                         <SegmentURL media="v1.seg56-L0.svc"/>
+                         <SegmentURL media="v1.seg57-L0.svc"/>
+                         <SegmentURL media="v1.seg58-L0.svc"/>
+    
+                       </SegmentList>
+                    </Representation>
+    
+     <Representation id="1" dependencyId="0" codecs="SVC" mimeType="video/264"
+                                width="720" height="1280" frameRate="24" sar="1:1" bandwidth="1607979">
+                       <SegmentList duration="24" timescale="24">
+                         <SegmentURL media="v1.seg0-L1.svc"/>
+                         <SegmentURL media="v1.seg1-L1.svc"/>
+                         <SegmentURL media="v1.seg2-L1.svc"/>
+                         <SegmentURL media="v1.seg3-L1.svc"/>
+                         <SegmentURL media="v1.seg4-L1.svc"/>
+                         <SegmentURL media="v1.seg5-L1.svc"/>
+                         <SegmentURL media="v1.seg6-L1.svc"/>
+                         <SegmentURL media="v1.seg7-L1.svc"/>
+                         <SegmentURL media="v1.seg8-L1.svc"/>
+                         <SegmentURL media="v1.seg9-L1.svc"/>
+                         <SegmentURL media="v1.seg10-L1.svc"/>
+                         <SegmentURL media="v1.seg11-L1.svc"/>
+                         <SegmentURL media="v1.seg12-L1.svc"/>
+                         <SegmentURL media="v1.seg13-L1.svc"/>
+                         <SegmentURL media="v1.seg14-L1.svc"/>
+                         <SegmentURL media="v1.seg15-L1.svc"/>
+                         <SegmentURL media="v1.seg16-L1.svc"/>
+                         <SegmentURL media="v1.seg17-L1.svc"/>
+                         <SegmentURL media="v1.seg18-L1.svc"/>
+                         <SegmentURL media="v1.seg19-L1.svc"/>
+                         <SegmentURL media="v1.seg20-L1.svc"/>
+                         <SegmentURL media="v1.seg21-L1.svc"/>
+                         <SegmentURL media="v1.seg22-L1.svc"/>
+                         <SegmentURL media="v1.seg23-L1.svc"/>
+                         <SegmentURL media="v1.seg24-L1.svc"/>
+                         <SegmentURL media="v1.seg25-L1.svc"/>
+                         <SegmentURL media="v1.seg26-L1.svc"/>
+                         <SegmentURL media="v1.seg27-L1.svc"/>
+                         <SegmentURL media="v1.seg28-L1.svc"/>
+                         <SegmentURL media="v1.seg29-L1.svc"/>
+                         <SegmentURL media="v1.seg30-L1.svc"/>
+                         <SegmentURL media="v1.seg31-L1.svc"/>
+                         <SegmentURL media="v1.seg32-L1.svc"/>
+                         <SegmentURL media="v1.seg33-L1.svc"/>
+                         <SegmentURL media="v1.seg34-L1.svc"/>
+                         <SegmentURL media="v1.seg35-L1.svc"/>
+                         <SegmentURL media="v1.seg36-L1.svc"/>
+                         <SegmentURL media="v1.seg37-L1.svc"/>
+                         <SegmentURL media="v1.seg38-L1.svc"/>
+                         <SegmentURL media="v1.seg39-L1.svc"/>
+                         <SegmentURL media="v1.seg40-L1.svc"/>
+                         <SegmentURL media="v1.seg41-L1.svc"/>
+                         <SegmentURL media="v1.seg42-L1.svc"/>
+                         <SegmentURL media="v1.seg43-L1.svc"/>
+                         <SegmentURL media="v1.seg44-L1.svc"/>
+                         <SegmentURL media="v1.seg45-L1.svc"/>
+                         <SegmentURL media="v1.seg46-L1.svc"/>
+                         <SegmentURL media="v1.seg47-L1.svc"/>
+                         <SegmentURL media="v1.seg48-L1.svc"/>
+                         <SegmentURL media="v1.seg49-L1.svc"/>
+                         <SegmentURL media="v1.seg50-L1.svc"/>
+                         <SegmentURL media="v1.seg51-L1.svc"/>
+                         <SegmentURL media="v1.seg52-L1.svc"/>
+                         <SegmentURL media="v1.seg53-L1.svc"/>
+                         <SegmentURL media="v1.seg54-L1.svc"/>
+                         <SegmentURL media="v1.seg55-L1.svc"/>
+                         <SegmentURL media="v1.seg56-L1.svc"/>
+                         <SegmentURL media="v1.seg57-L1.svc"/>
+                         <SegmentURL media="v1.seg58-L1.svc"/>
+    
+                       </SegmentList>
+                    </Representation>
+    
+     <Representation id="2" dependencyId="0 1" codecs="SVC" mimeType="video/264"
+                                width="720" height="1280" frameRate="24" sar="1:1" bandwidth="2774398">
+                       <SegmentList duration="24" timescale="24">
+                         <SegmentURL media="v1.seg0-L2.svc"/>
+                         <SegmentURL media="v1.seg1-L2.svc"/>
+                         <SegmentURL media="v1.seg2-L2.svc"/>
+                         <SegmentURL media="v1.seg3-L2.svc"/>
+                         <SegmentURL media="v1.seg4-L2.svc"/>
+                         <SegmentURL media="v1.seg5-L2.svc"/>
+                         <SegmentURL media="v1.seg6-L2.svc"/>
+                         <SegmentURL media="v1.seg7-L2.svc"/>
+                         <SegmentURL media="v1.seg8-L2.svc"/>
+                         <SegmentURL media="v1.seg9-L2.svc"/>
+                         <SegmentURL media="v1.seg10-L2.svc"/>
+                         <SegmentURL media="v1.seg11-L2.svc"/>
+                         <SegmentURL media="v1.seg12-L2.svc"/>
+                         <SegmentURL media="v1.seg13-L2.svc"/>
+                         <SegmentURL media="v1.seg14-L2.svc"/>
+                         <SegmentURL media="v1.seg15-L2.svc"/>
+                         <SegmentURL media="v1.seg16-L2.svc"/>
+                         <SegmentURL media="v1.seg17-L2.svc"/>
+                         <SegmentURL media="v1.seg18-L2.svc"/>
+                         <SegmentURL media="v1.seg19-L2.svc"/>
+                         <SegmentURL media="v1.seg20-L2.svc"/>
+                         <SegmentURL media="v1.seg21-L2.svc"/>
+                         <SegmentURL media="v1.seg22-L2.svc"/>
+                         <SegmentURL media="v1.seg23-L2.svc"/>
+                         <SegmentURL media="v1.seg24-L2.svc"/>
+                         <SegmentURL media="v1.seg25-L2.svc"/>
+                         <SegmentURL media="v1.seg26-L2.svc"/>
+                         <SegmentURL media="v1.seg27-L2.svc"/>
+                         <SegmentURL media="v1.seg28-L2.svc"/>
+                         <SegmentURL media="v1.seg29-L2.svc"/>
+                         <SegmentURL media="v1.seg30-L2.svc"/>
+                         <SegmentURL media="v1.seg31-L2.svc"/>
+                         <SegmentURL media="v1.seg32-L2.svc"/>
+                         <SegmentURL media="v1.seg33-L2.svc"/>
+                         <SegmentURL media="v1.seg34-L2.svc"/>
+                         <SegmentURL media="v1.seg35-L2.svc"/>
+                         <SegmentURL media="v1.seg36-L2.svc"/>
+                         <SegmentURL media="v1.seg37-L2.svc"/>
+                         <SegmentURL media="v1.seg38-L2.svc"/>
+                         <SegmentURL media="v1.seg39-L2.svc"/>
+                         <SegmentURL media="v1.seg40-L2.svc"/>
+                         <SegmentURL media="v1.seg41-L2.svc"/>
+                         <SegmentURL media="v1.seg42-L2.svc"/>
+                         <SegmentURL media="v1.seg43-L2.svc"/>
+                         <SegmentURL media="v1.seg44-L2.svc"/>
+                         <SegmentURL media="v1.seg45-L2.svc"/>
+                         <SegmentURL media="v1.seg46-L2.svc"/>
+                         <SegmentURL media="v1.seg47-L2.svc"/>
+                         <SegmentURL media="v1.seg48-L2.svc"/>
+                         <SegmentURL media="v1.seg49-L2.svc"/>
+                         <SegmentURL media="v1.seg50-L2.svc"/>
+                         <SegmentURL media="v1.seg51-L2.svc"/>
+                         <SegmentURL media="v1.seg52-L2.svc"/>
+                         <SegmentURL media="v1.seg53-L2.svc"/>
+                         <SegmentURL media="v1.seg54-L2.svc"/>
+                         <SegmentURL media="v1.seg55-L2.svc"/>
+                         <SegmentURL media="v1.seg56-L2.svc"/>
+                         <SegmentURL media="v1.seg57-L2.svc"/>
+                         <SegmentURL media="v1.seg58-L2.svc"/>
+    
+                       </SegmentList>
+                    </Representation>
+    
+     </AdaptationSet>
+        </Period>
+    </MPD>
+    

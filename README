@@ -1,0 +1,95 @@
+=====================================Các bước thược hiện:===================================
+B1: build JSVM : https://github.com/floriandejonckheere/jsvm/tree/master
+B2: chuyen file v1.mp4 => v1.yuv
+B3: tao cac file configuration: main.cfg, layer0.cfg, layer1.cfg, layer2.cfg
+B4: encode dung jsvm thanh 3 layer: H264AVCEncoderLibTestStatic -pf main.cfg (gần 2 tiếng để tạo ra file v1.264)
+B5: tải repo: https://github.com/floriandejonckheere/jsvm/tree/master chạy python demultiplex.py v1.264 32 ./outputv1  ==> file .mpd, init và các file 1s .svc
+B6: kiểm tra luồng stream hoạt động:
+
+=======================================Logs================================================
+
+log v1:
+SUMMARY:
+                        bitrate    Min-bitr   Y-PSNR   U-PSNR   V-PSNR
+                       --------- ---------- -------- -------- --------
+  720x1280 @  7.5000   747.4235   747.4235  41.9831  47.6245  47.1389
+  720x1280 @ 15.0000   980.5795   980.5795  41.7265  47.5243  47.0229
+  720x1280 @ 30.0000  1292.9135  1292.9135  41.4933  47.4482  46.9328
+  720x1280 @  7.5000  1100.2874  1100.2874  43.3217  48.6476  48.2055
+  720x1280 @ 15.0000  1363.9247  1363.9247  42.7548  48.5120  48.0397
+  720x1280 @ 30.0000  1718.0793  1718.0793  42.3694  48.4084  47.9176
+  720x1280 @  7.5000  1953.0643  1953.0643  45.8969  51.9786  51.5125
+  720x1280 @ 15.0000  2357.6564  2357.6564  44.9930  51.6719  51.1681
+  720x1280 @ 30.0000  2883.4536  2883.4536  44.4103  51.5159  50.9858
+
+Encoding speed: 3830.167 ms/frame, Time:6779396.000 ms, Frames: 1770
+PS D:\ShortVideoStreaming\cfg>
+
++ tách các lớp riêng:
+PS D:\ShortVideoStreaming\cfg>  BitStreamExtractorStatic v1.264 v1-l0.264 -l 0                
+JSVM 9.19.15 BitStream Extractor 
+
+
+Contained Layers:
+====================
+
+       Layer   Resolution   Framerate   Bitrate MinBitrate      DTQ
+         0     720x1280       7.5000     747.40      747.40   (0,0,0) 
+         1     720x1280      15.0000     980.60      980.60   (0,1,0) 
+         2     720x1280      30.0000    1292.90     1292.90   (0,2,0) 
+         3     720x1280       7.5000    1100.30     1100.30   (1,0,0) 
+         4     720x1280      15.0000    1363.90     1363.90   (1,1,0) 
+         5     720x1280      30.0000    1718.00     1718.00   (1,2,0) 
+         6     720x1280       7.5000    1953.00     1953.00   (2,0,0) 
+         7     720x1280      15.0000    2358.00     2358.00   (2,1,0) 
+         8     720x1280      30.0000    2883.00     2883.00   (2,2,0) 
+Total Packet Size: 9602596
+
+
+Number of input packets :  28327
+Number of output packets:  15933
+PS D:\ShortVideoStreaming\cfg>  BitStreamExtractorStatic v1.264 v1-L1.264 -l 1                
+JSVM 9.19.15 BitStream Extractor 
+
+
+Contained Layers:
+====================
+
+       Layer   Resolution   Framerate   Bitrate MinBitrate      DTQ
+         0     720x1280       7.5000     747.40      747.40   (0,0,0) 
+         1     720x1280      15.0000     980.60      980.60   (0,1,0) 
+         2     720x1280      30.0000    1292.90     1292.90   (0,2,0) 
+         3     720x1280       7.5000    1100.30     1100.30   (1,0,0) 
+         4     720x1280      15.0000    1363.90     1363.90   (1,1,0) 
+         5     720x1280      30.0000    1718.00     1718.00   (1,2,0) 
+         6     720x1280       7.5000    1953.00     1953.00   (2,0,0) 
+         7     720x1280      15.0000    2358.00     2358.00   (2,1,0) 
+         8     720x1280      30.0000    2883.00     2883.00   (2,2,0) 
+Total Packet Size: 12738256
+
+
+Number of input packets :  28327
+Number of output packets:  23015
+PS D:\ShortVideoStreaming\cfg>  BitStreamExtractorStatic v1.264 v1-L2.264 -l 2                
+JSVM 9.19.15 BitStream Extractor 
+
+
+Contained Layers:
+====================
+
+       Layer   Resolution   Framerate   Bitrate MinBitrate      DTQ
+         0     720x1280       7.5000     747.40      747.40   (0,0,0) 
+         1     720x1280      15.0000     980.60      980.60   (0,1,0) 
+         2     720x1280      30.0000    1292.90     1292.90   (0,2,0) 
+         3     720x1280       7.5000    1100.30     1100.30   (1,0,0) 
+         4     720x1280      15.0000    1363.90     1363.90   (1,1,0) 
+         5     720x1280      30.0000    1718.00     1718.00   (1,2,0) 
+         6     720x1280       7.5000    1953.00     1953.00   (2,0,0) 
+         7     720x1280      15.0000    2358.00     2358.00   (2,1,0) 
+         8     720x1280      30.0000    2883.00     2883.00   (2,2,0) 
+Total Packet Size: 21332955
+
+
+Number of input packets :  28327
+Number of output packets:  28327
+PS D:\ShortVideoStreaming\cfg> 
